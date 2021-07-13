@@ -30,23 +30,6 @@ const displayMenu = (container) => {
         }
         return {name, displayPizza};
     };
-
-    const displayNav = (() => {
-        const navTabs = document.createElement("div");
-        navTabs.setAttribute("id", "navTabs");
-        document.body.appendChild(navTabs);
-        document.body.insertBefore(navTabs, container);
-        const homeButton = document.createElement("button");
-        const menuButton = document.createElement("button");
-        const contactButton = document.createElement("button");
-        navTabs.appendChild(homeButton);
-        navTabs.appendChild(menuButton);
-        navTabs.appendChild(contactButton);
-        homeButton.textContent = "Home";
-        menuButton.textContent = "Menu";
-        contactButton.textContent = "Contact";
-        menuButton.setAttribute("id","activeButton");    
-    })();
     
     const header = document.createElement("div");
     container.appendChild(header);
