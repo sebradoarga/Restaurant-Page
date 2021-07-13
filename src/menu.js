@@ -7,7 +7,8 @@ const displayMenu = (container) => {
             const pizzaContainer = document.createElement("div");
             menuContainer.appendChild(pizzaContainer);
             pizzaContainer.classList.add("pizzaContainer");
-            pizzaContainer.setAttribute("id", pizzaName);
+            const separatedName = pizzaName.split(" ");
+            pizzaContainer.setAttribute("id", separatedName[0]);
             const pizzaTitle = document.createElement("h2");
             pizzaContainer.appendChild(pizzaTitle);
             pizzaTitle.classList.add("pizzaTitle");
@@ -60,14 +61,14 @@ const displayMenu = (container) => {
     menuContainer.setAttribute("id","menuContainer");
 
     const margherita = Pizza("Margherita", ["oregano"]);
-    const quattro = Pizza("Quattroo Stagioni", ["mushrooms", "ham", "artichokes", "olives", "oregano"]);
+    const quattro = Pizza("Quattro Stagioni", ["mushrooms", "ham", "artichokes", "olives", "oregano"]);
     const diavola = Pizza("Diavola", ["spicy salami", "chilli pepper"]);
-    const parmigiana = Pizza("Parmigiana", ["eggplants", "parmesan flakes"]);
+    const spinach = Pizza("Spinach", ["spinach"]);
     const funghi = Pizza("Funghi", ["mushrooms"]);
     margherita.displayPizza();
     quattro.displayPizza();
     diavola.displayPizza();
-    parmigiana.displayPizza();
+    spinach.displayPizza();
     funghi.displayPizza();
 }
 

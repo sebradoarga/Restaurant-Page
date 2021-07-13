@@ -3,5 +3,5 @@ import displayMenu from "./menu";
 
 const content = document.getElementById("content");
 
- displayHomePage(content);
-// displayMenu(content);
+//  displayHomePage(content);
+displayMenu(content);

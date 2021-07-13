@@ -23,7 +23,7 @@ const displayHomepage = (container) => {
     const pageTitle = document.createElement("h1");
     pageText.appendChild(pageTitle);
     pageText.setAttribute("id","pageText");
-    pageTitle.setAttribute("id","pageTitle");
+    pageTitle.classList.add("pageTitle");
     pageTitle.textContent = "Tommy's Pizzeria";
     const textCopy = document.createElement("p");
     pageText.appendChild(textCopy);
