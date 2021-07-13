@@ -21,7 +21,7 @@ const displayContactPage = (container) => {
     contactInfo.appendChild(phoneNumber);
     contactInfo.appendChild(email);
     phoneNumber.textContent = "Tel. 999-999-9999";
-    email.textContent = "Email: contact@tommyspizza.com";
+    email.textContent = "Email: contact@tommyspizzeria.com";
 }
 
 export default displayContactPage;

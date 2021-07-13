@@ -61,9 +61,11 @@ body *{
 }
 
 #pageText {
+    height: 33vH;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 1.5vh;
 }
 
@@ -108,7 +110,6 @@ body *{
     width: 40%;
     height: 75vH;
     margin-top: 5%;
-    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,6 +167,10 @@ body *{
     background-image: url("img/funghi.png");
 }
 
+#Funghi {
+    margin-bottom: 3%;
+}
+
 #contactTitle {
     margin-top: 0;
     height: 40vH;
@@ -185,10 +190,13 @@ body *{
     background-size: cover;
     background-position: center;
     background-position-y: 70%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 #contactContainer {
     width: 80%;
+    height: 40vH;
     margin: auto;
     margin-top: 40px;
     display: flex;
@@ -208,7 +216,10 @@ body *{
 }
 
 #contactInfo {
-    width: 50%;
+    width: 60%;
     height: 100%;
     font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
