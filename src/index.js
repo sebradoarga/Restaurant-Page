@@ -1,5 +1,6 @@
 import displayHomePage from "./homepage";
 import displayMenu from "./menu";
+import displayContactPage from "./contact";
 
 const content = document.getElementById("content");
 
@@ -34,4 +35,12 @@ homeButton.addEventListener("click", () => {
     contactButton.setAttribute("id","");
     homeButton.setAttribute("id", "activeButton");
     displayHomePage(content);
+})
+
+contactButton.addEventListener("click", () => {
+    content.innerHTML = "";
+    menuButton.setAttribute("id","");
+    homeButton.setAttribute("id","");
+    contactButton.setAttribute("id", "activeButton");
+    displayContactPage(content);
 })

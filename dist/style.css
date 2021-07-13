@@ -165,3 +165,50 @@ body *{
 #Funghi .pizzaImage{
     background-image: url("img/funghi.png");
 }
+
+#contactTitle {
+    margin-top: 0;
+    height: 40vH;
+    background: #2b241977;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1e1bf;
+    font-size: 5em;
+    text-shadow: 0 0 8px #2b2419;
+    font-weight: 400;
+}
+
+#contactHeader {
+    background-image: url("img/restaurant.jpg");
+    height: 40vH;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 70%;
+}
+
+#contactContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#chefImage {
+    background: white;
+    background-image: url("img/baker.png");
+    height: 260px;
+    width: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: 7px solid #9f2106;
+}
+
+#contactInfo {
+    width: 50%;
+    height: 100%;
+    font-size: 1.5em;
+}
